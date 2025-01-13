@@ -209,7 +209,7 @@ class Opt:
                 for i, y in enumerate(self.candidate_node_y):  # 添加节点
                     if add_node_num[k] >= add_node_num_flag[k]:
                         break
-                    if k == y and m < 20 and self.candidate_node[i] not in nei_nodes:  # [cora&citeSeer:20,pubmed:10]
+                    if k == y and m < 20 and self.candidate_node[i] not in nei_nodes:  
                         # print("2", y, self.all_labels[self.candidate_node[i]])
                         self.train_node.append(self.candidate_node[i])
                         self.train_node_y.append(y)
